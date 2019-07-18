@@ -2,9 +2,11 @@ package com.andrebongiolo.lavanderia.models;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
+
 
 @Entity
-@Table( name = "ORDEM_SERVICOS")
+@Table(name = "ORDEM_SERVICOS")
 @SequenceGenerator(name = "SEQ_ORDEM_SERVICOS", allocationSize = 10, sequenceName = "SEQ_ORDEM_SERVICOS")
 public class OrdemServico implements Entidade {
 
@@ -27,6 +29,11 @@ public class OrdemServico implements Entidade {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "DT_RETIRADA")
 	private Date dataRetirada;
+
+	@OneToMany(fetch = FetchType.EAGER)
+	@JoinColumn(name = "ID_ITEM")
+	private List<Item> items;
+
 
 	@Override
 	public Long getId() {
@@ -59,5 +66,13 @@ public class OrdemServico implements Entidade {
 
 	public void setDataRetirada(Date dataRetirada) {
 		this.dataRetirada = dataRetirada;
+	}
+
+	public List<Item> getItems() {
+		return items;
+	}
+
+	public void setItems(List<Item> items) {
+		this.items = items;
 	}
 }

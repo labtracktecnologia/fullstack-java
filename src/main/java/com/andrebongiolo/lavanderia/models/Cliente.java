@@ -5,10 +5,11 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+
 @Entity
 @Table(name = "CLIENTES")
 @SequenceGenerator(name = "SEQ_CLIENTE", allocationSize = 1, sequenceName = "SEQ_CLIENTE")
-public class Cliente implements Entidade{
+public class Cliente implements Entidade {
 
 	@Id
 	@Column(name = "ID_CLIENTE")
@@ -31,12 +32,6 @@ public class Cliente implements Entidade{
 	@Email
 	@Column(name = "EMAIL", length = 120)
 	private String email;
-
-
-	@Override
-	public Long getId() {
-		return id;
-	}
 
 	public void setId(Long id) {
 		this.id = id;
@@ -72,5 +67,10 @@ public class Cliente implements Entidade{
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	@Override
+	public Long getId() {
+		return id;
 	}
 }

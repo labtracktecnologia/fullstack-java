@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table( name = "ITEMS")
+@Table(name = "ITEMS")
 @SequenceGenerator(name = "SEQ_ITEMS", allocationSize = 10, sequenceName = "SEQ_ITEMS")
 public class Item implements Entidade {
 
