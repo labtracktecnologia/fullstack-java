@@ -1,4 +1,4 @@
-package com.andrebongiolo.lavanderia.resources;
+package com.andrebongiolo.lavanderia.config;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

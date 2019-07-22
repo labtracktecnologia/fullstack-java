@@ -1,7 +1,4 @@
 package com.andrebongiolo.lavanderia.service;
-
-
-
 import com.andrebongiolo.lavanderia.models.Entidade;
 import com.andrebongiolo.lavanderia.utils.GenericDao;
 

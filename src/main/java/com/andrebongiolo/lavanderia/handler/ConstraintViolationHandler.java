@@ -1,4 +1,4 @@
-package com.andrebongiolo.lavanderia.resources;
+package com.andrebongiolo.lavanderia.handler;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;

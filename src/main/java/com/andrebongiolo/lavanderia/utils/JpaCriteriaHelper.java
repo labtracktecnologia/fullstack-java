@@ -15,9 +15,9 @@ import java.util.*;
  */
 public class JpaCriteriaHelper<T extends Entidade> {
 
-    public enum ComparatorOperator { EQUAL, NOT_EQUAL, LIKE, LIKE_IGNORE_CASE, BETWEEN, GREATER_THAN, LESS_THAN, IN };
-    public enum LogicalOperator { AND, OR };
-    public enum OrderDirection { ASC, DESC };
+    public enum ComparatorOperator { EQUAL, NOT_EQUAL, LIKE, LIKE_IGNORE_CASE, BETWEEN, GREATER_THAN, LESS_THAN, IN }
+    public enum LogicalOperator { AND, OR }
+    public enum OrderDirection { ASC, DESC }
 
     private static final Integer DEFAULT_PAGE_SIZE = 50;
 

@@ -1,4 +1,4 @@
-package com.andrebongiolo.lavanderia.resources;
+package com.andrebongiolo.lavanderia.handler;
 
 import javax.persistence.EntityNotFoundException;
 import javax.ws.rs.core.Response;

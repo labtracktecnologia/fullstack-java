@@ -11,7 +11,6 @@ import java.util.List;
 
 /**
  * Dao Generico para operações CRUD encapsulando o EntityManager
- * @author jhony.pereira
  * @param <T> Tipo da Entidade no GenericDao
  */
 public class GenericDao<T extends Entidade> {
