@@ -10,3 +10,7 @@ swarm:
         validate-on-match: true
         background-validation: false
         exception-sorter-class-name: org.jboss.jca.adapters.jdbc.extensions.postgres.PostgreSQLExceptionSorter
+
+        swarm.datasources.data-sources.LavanderiaDS.connection-url
+        swarm.datasources.data-sources.LavanderiaDS.user-name
+        swarm.datasources.data-sources.LavanderiaDS.password
