@@ -3,9 +3,9 @@ swarm:
     data-sources:
       LavanderiaDS:
         driver-name: postgresql
-        connection-url: jdbc:postgresql://localhost:5432/javaweb
-        user-name: postgres
-        password: franci.1986
+        connection-url: postgres://bgqdzuatonrgyu:3ce705bb56215a20bb91208277363b1539add3d9278b0f40f6fd5140c3be78ee@ec2-107-21-216-112.compute-1.amazonaws.com:5432/dcg12biq3nbmuk
+        user-name: bgqdzuatonrgyu
+        password: dcg12biq3nbmuk
         valid-connection-checker-class-name: org.jboss.jca.adapters.jdbc.extensions.postgres.PostgreSQLValidConnectionChecker
         validate-on-match: true
         background-validation: false
