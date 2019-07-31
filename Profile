@@ -1,0 +1,1 @@
+web: java -jar target/demo-thorntail.jar -Dswarm.http.port=$PORT
