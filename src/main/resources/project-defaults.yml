@@ -1,7 +1,7 @@
 swarm:
   datasources:
     data-sources:
-      lavanderiads:
+      LavanderiaDS:
         driver-name: postgresql
         connection-url: jdbc:postgresql://localhost:5432/javaweb
         user-name: postgres
